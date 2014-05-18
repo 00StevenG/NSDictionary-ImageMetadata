@@ -12,7 +12,7 @@
 
 #pragma mark Metadata Fetching
 
-+ (NSDictionary*)metadataWithImageAtURL:(NSURL*)url
++ (NSDictionary*)imageMetadataWithImageAtURL:(NSURL*)url
 {
     CGImageSourceRef imageSource = CGImageSourceCreateWithURL((__bridge CFURLRef)url, NULL);
     
@@ -46,9 +46,9 @@
     return [NSString stringWithFormat:@"1/%g",ceilf(d)];
 }
 
-- (NSString*)sgg_formattedApetureValue{
-    return
-    [NSString stringWithFormat:@"f/%@",[self sgg_recursiveObjectForKey:(id)kCGImagePropertyExifApertureValue]];
+- (NSString*)sgg_formattedApetureValue
+{
+    return [NSString stringWithFormat:@"f/%@",[self sgg_recursiveObjectForKey:(id)kCGImagePropertyExifApertureValue]];
 }
 
 #pragma mark - Location

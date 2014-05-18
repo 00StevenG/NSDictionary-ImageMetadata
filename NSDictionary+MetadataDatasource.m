@@ -51,8 +51,6 @@
     else{
         cell.detailTextLabel.text = [self sgg_valueForPropertyAtIndexPath:indexPath];
     }
-    
-    NSLog(@"%@",[self sgg_valueForPropertyAtIndexPath:indexPath]);
     return cell;
 }
 
@@ -103,11 +101,9 @@
         NSDictionary* info =[self objectForKey:key];
         return [NSString stringWithFormat:@"%@",info];
     }
-    
     NSDictionary* info =[self objectForKey:key];
     NSArray* keys = [info allKeys];
     NSString* str = [keys objectAtIndex:indexPath.row];
-    
     return [NSString stringWithFormat:@"%@",[info objectForKey:str]];
 }
 

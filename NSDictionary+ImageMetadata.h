@@ -13,9 +13,9 @@
 
 @interface NSDictionary (ImageMetadata)
 
-+ (NSDictionary*)metadataWithImageAtURL:(NSURL*)url;
++ (NSDictionary*)imageMetadataWithImageAtURL:(NSURL *)url;
 
-// pass in CGImageProperty value (recursively search sub dictionaries)
+// pass in CGImageProperty value (recursively searched in sub dictionaries)
 - (id)sgg_valueForProperty:(NSString *)property;
 
 // UI Formatted/Readable Variants

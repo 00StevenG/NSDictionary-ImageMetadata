@@ -13,7 +13,7 @@
 /*
   Tableview dataource
 */
-// A default implementation using Basic UITableViewCells
+// A default implementation using 'UITableViewCellStyleValue1' UITableViewCells
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section;

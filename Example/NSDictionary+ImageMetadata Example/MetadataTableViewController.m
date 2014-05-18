@@ -31,7 +31,7 @@
 {
     [super viewDidLoad];
     self.imageFilenameLabel.text = [self.imageURL lastPathComponent];
-    self.metadata = [NSDictionary metadataWithImageAtURL:self.imageURL];
+    self.metadata = [NSDictionary imageMetadataWithImageAtURL:self.imageURL];
     self.tableView.dataSource = self.metadata;
 }
 
